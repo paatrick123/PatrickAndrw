@@ -185,5 +185,87 @@ main{
 .caja img{
     width: 500px;
     
+}
+/* fin .portafolio */
 
+/* Trabajo */
+
+.trabajo{
+    padding: 60px 65px;
+    background-color: #F4F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+.trabajo h1{
+    font-weight: 600px;
+    font-size: 28px;
+}
+.trabajo-botones{
+    margin: 0 !important;
+}
+
+.servicio{
+    background-color:#F4F6F6 ;
+    display : flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.servicio-img{
+    width: 640px;
+    height: 504px;
+    background-image: url(../assets/me.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.servicio-descripcion{
+    width: 640px;
+    padding-right: 99px 30px;
+}
+.servicio-descripcion h1{
+    font-weight: 600px;
+    font-size: 40px;
+}
+.servicio-descripcion p{
+    font-weight: 400;
+    font-size: 18px;  
+    color:var(--plomo);
+}
+.servicio-descripcion h4{
+    font-weight: 600;
+    font-size: 20px;    
+
+}
+.servicio-descripcion span{
+    font-weight: 400;
+    font-size: 14px;
+    color:var(--plomo)
+}
+footer{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F4F6F6;
+    padding: 59px 130px;
+}
+footer div:first-child h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+footer div:first-child h4{
+    font-weight: 400;
+    font-size: 20px;
+
+}
+footer div:last-child i{
+    font-size: 24px;
+    margin-right: 40px;
+    color:var(--plomo)
+}
+footer a i:hover{
+    color:var(--colorPrimario)
 }
