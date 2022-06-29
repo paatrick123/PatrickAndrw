@@ -7,69 +7,75 @@
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css\media-queries.css">
 
     <!-- Google Fonts --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    
 
     <title>Portafolio Elemental</title>
 </head>
 <body>
     
     <!-- ===Header===== -->
-    <header class="header">
-        <div class="logo">
-            <img src="assets/Logo.png" alt="Logo">
-        </div>
-
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <img src="assets/Logo.png" alt="Logo">
+            </div>
+    
+            <nav class="menu">
+                <ul class="navbar" id="navbar">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <a class="close" href="#">
+                        <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
+                    </a>
+    
+                </ul>
+                    <a class="hamburger" href="#navbar">
+                        <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
+                    </a>
+            </nav>
+        </header>
+    </div>
     <!-- ===Fin Header===== -->
 
     <!-- ====Main==== -->
+<div class="contenedor">
     <main>
-
         <!-- Contenedor 1 -->
         <div class="main-descripcion">
             <h3>Hola soy Patrick Andrw</h3>
             <h1>Web Developer <br>
                 Elemental</h1>
             <p>Elemental prepara a niños y adolescentes de 7 a 18 años para las profesiones del futuro a través de Programas Educativos en Ciencia y Tecnología que desarrollan las habilidades digitales</p>
-
             <div class="main-botones">
                 <a href="https://www.instagram.com/patrick_andrw/">Contactame</a>
                 <a href="assets\CV EJEMPLOS.pdf" download="CV EJEMPLOS.pdf">Descargar CV</a>
             </div>
         </div>
-
         <!-- Contenedor 2 -->
-
         <div class="main-image">
             <img src="assets/Image_hero.png" alt="Imagen del main">
         </div>
-        
     </main>
-
+</div>
     <!-- ===final main=== -->
 
     <!-- sobre mi -->
-<section class="about">
-    <div class="about-img">
-        <img src="assets\about.png" alt="Imagen">
-    </div>
-    <div class="about-descripcion">
-        <h3>Sobre mi</h3>
-        <h2>Bienvenido a la  <br> Pagina de Patrick</h2>
+<div class="contenedor">
+    <section class="about">
+        <div class="about-img">
+            <img src="assets\about.png" alt="Imagen">
+        </div>
+        <div class="about-descripcion">
+            <h3>Sobre mi</h3>
+            <h2>Bienvenido a la  <br> Pagina de Patrick</h2>
             <p>Elemental prepara a niños y adolescentes de 7 a 18 años para las 
                 profesiones del futuro a través de Programas Educativos en Ciencia y Tecnología que desarrollan
                 las habilidades digitales</p>
@@ -79,21 +85,21 @@
                 <a href="assets\CV EJEMPLOS.pdf" download="CV EJEMPLOS.pdf">Descargar CV</a>
             </div>
         </div>
-</section>
-
+    </section>
+</div>
 <!-- ===fin=== -->
 
 <!-- <!-- ==portafolio==   -->
 <div class="contenedor">
     <section class="portafolio">
+        <div class="cajaMain">
         <div class="about-description portafolio-description">
                 <h3>Portafolio</h3>
                 <h2>Ver mis proyectos para ver mis habilidades</h2>
         </div>
         <div class="caja">
-            <a href="https://ivansanguezax.notion.site/Clase-cbfcbf7899784c58a6d5d7105d578ee4">
-                <img src="assets\projects\pr1.png" alt="Proyecto"></a>
-            </div>
+            <img src="assets/projects/pr1.png" alt="Proyecto">
+        </div>
         <div class="caja">
             <img src="assets/projects/pr2.png" alt="Proyecto">
         </div>
@@ -112,10 +118,13 @@
         <div class="caja">
             <img src="assets/projects/pr7.png" alt="Proyecto">
         </div>
+        </div>
     </section>
 </div>
 
 <!-- fin portafolio -->
+
+<!-- trabajo -->
 <div class="contenedor">
 <section class="trabajo">
     <div>
@@ -127,8 +136,9 @@
     </div>
 </section>
 </div>
+<!-- fin del trabajo -->
 
-
+<!-- servicio -->
 
 <div class="contenedor">
 

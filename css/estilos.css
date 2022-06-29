@@ -30,6 +30,7 @@ li{
 
 ul,ol{
     padding: 0 !important;
+    margin-top: 0 !important;
 }
 
 /* ====Header==== */
@@ -66,7 +67,11 @@ ul,ol{
 }
 
 .menu a:hover{
-    color: rgb(5, 4, 4);
+    color: black;
+}
+
+.close, .hamburger{
+    display: none;
 }
 
 /* =====Fin Header==== */
@@ -74,10 +79,10 @@ ul,ol{
 /* ====Main==== */
 
 main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
 }
 
 .main-descripcion{
@@ -111,7 +116,6 @@ main{
     align-items: center;
     margin-top: 26px;
 }
-
 .main-botones a:first-child{
     background-color: var(--colorPrimario);
     padding: 16px 24px;
@@ -130,85 +134,100 @@ main{
 }
 
 .main-image img{
-    width: 624px;
+    width: 623px;
 }
 
+/* ======Final Main======== */
 
 
+/* =====About Me===== */
 
 .about{
-    display : flex;
+    display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
 }
-.about.img img{
+.about-img img{
     width: 600px;
     border-radius: 5px;
-
 }
-.about-descripcion{
+.about-description{
     width: 480px;
     margin-left: 100px;
-
 }
-.about-descripcion h3{
+.about-description h3{
     font-size: 24px;
     font-weight: 400;
-    color:var(--colorPrimario) ;
+    color: var(--colorPrimario);
 }
-.about-descripcion h2{
-    font-weight: 600px;
-    font-size:50px 
-    
+.about-description h2{
+    font-weight: 600;
+    font-size: 50px;
+    color: black;
 }
-.about-descripcion p{
+.about-description p{
     font-size: 14px;
     font-weight: 400;
     color: var(--plomo);
 }
 
-/* final sobre mi */
-
-/* proyectos */
+/* =====Final sobre mi===== *
+/* ======Portafolio===== */
 .contenedor{
-    padding: 103px 130px;
+    max-width: 1024px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
 
 .portafolio{
 
-    display : flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-     gap: 20px;   /* separacion de contenedores */
+    margin: 60px 0px;
 }
+.cajaMain{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
 .caja img{
-    width: 500px;
-    
+    width: 100%;
 }
-/* fin .portafolio */
+
+/* ====Fin Portafolio==== */
 
 /* Trabajo */
-
 .trabajo{
-    padding: 60px 65px;
+    margin: 60px 0px;
+    padding: 60px 55px;
     background-color: #F4F6F6;
     display: flex;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
 }
 .trabajo h1{
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 28px;
 }
+
+
 .trabajo-botones{
     margin: 0 !important;
 }
 
+/* =====Fin trabajo===== */
+
+
+/* Servicio */
+
 .servicio{
-    background-color:#F4F6F6 ;
-    display : flex;
-    flex-wrap: wrap;
+    margin: 60px 0px;
+    background-color: #F4F6F6;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -218,39 +237,37 @@ main{
     background-image: url(../assets/me.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size: cover;
 }
 .servicio-descripcion{
-    width: 640px;
-    padding-right: 99px 30px;
+    width: auto;
+    padding: 99px 30px;
 }
 .servicio-descripcion h1{
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 40px;
 }
 .servicio-descripcion p{
     font-weight: 400;
-    font-size: 18px;  
-    color:var(--plomo);
+    font-size: 18px;
+    color: var(--plomo);
 }
 .servicio-descripcion h4{
     font-weight: 600;
-    font-size: 20px;    
-
+    font-size: 20px;
 }
 .servicio-descripcion span{
     font-weight: 400;
     font-size: 14px;
-    color:var(--plomo)
+    color: var(--plomo);
 }
+
 footer{
-    display : flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    background-color: #F4F6F6;
     padding: 59px 130px;
+    background-color: #F4F6F6;
 }
 footer div:first-child h1{
     font-weight: 600;
@@ -259,13 +276,14 @@ footer div:first-child h1{
 footer div:first-child h4{
     font-weight: 400;
     font-size: 20px;
-
 }
+
 footer div:last-child i{
     font-size: 24px;
     margin-right: 40px;
-    color:var(--plomo)
+    color: var(--plomo);
 }
+
 footer a i:hover{
-    color:var(--colorPrimario)
+    color: var(--colorPrimario);
 }

@@ -1,0 +1,193 @@
+/* Large Screen */
+@media screen and (max-width:1024px){
+    main{
+        padding: 0px 40px;
+    }
+    .main-image img{
+        width: 100%;
+    }
+    .main-descripcion h3{
+        font-size: 20px;
+    }
+    .main-descripcion h1{
+        font-size: 65px;
+    }
+    .about{
+        padding: 0 40px;
+    }
+    .about-description{
+        margin-left: 30px;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .servicio-img{
+        width: 100%;
+    }
+    .contenedor{
+        margin: 0px 15px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px){
+    .close, .hamburger{
+        display: initial;
+    }
+
+    .close, .hamburger{
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+    }
+    .hamburger{
+        background: white;
+    }
+    .close{
+        background: black;
+    }
+
+    .hamburger img, .close img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar{
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        list-style: none;
+        background: black;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform 0.2s ease;
+    }
+
+    .navbar:target{
+        transform: translateY(0);
+    }
+
+    li a{
+        display: block;
+        color: white !important;
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+    li a:hover, li a:focus{
+        border-bottom: 1px solid white;
+    }
+
+    .menu ul{
+        justify-content: space-evenly;
+    }
+    .menu li{
+        margin-right: 0;
+    }
+    .header{
+        justify-content: center;
+    }
+
+    main{
+        padding: 100px 0px;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .main-image img, .about-img img{
+        width: 60%;
+    }
+    .main-descripcion, .about-description{
+        margin: 0;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+    }
+    .main-image, .about-img{
+        display: flex;
+        justify-content: center;
+    }
+    .main-botones{
+        width: auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    .about{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .cajaMain{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .servicio{
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px 0px 30px;
+    }
+    .trabajo{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    footer div:last-child i{
+        margin: 0;
+    }
+    
+
+}
+
+/* Dispositivo Movil L */
+@media screen and (max-width: 425px){
+    main{
+        height: auto;
+    }
+    .main-botones a:first-child, .main-botones a:last-child{
+        padding: 14px 15px;
+        font-size: 15px;
+    }
+    
+    h1,h2{
+        font-size: 30px !important;
+        text-align: center;
+    }
+    footer{
+        padding: 60px 0px;
+    }
+}
+
+/* Dispositivo Movil M */
+@media screen and (max-width: 375px){
+    
+}
+
+/* Dispositivo Movil S */
+@media screen and (max-width: 320px){
+    
+    .main-botones a:first-child, .main-botones a:last-child{
+        padding: 12px 10px;
+        font-size: 10px;
+    }
+    h1, h2{
+        font-size: 20px !important;
+        text-align: center;
+    }
+    p{
+        font-size: 10px !important;
+    }
+}
